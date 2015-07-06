@@ -1,7 +1,7 @@
 <?php
 echo "hello";
-//include('incluirbd.php');
-include('function.php');
+include('incluirbd.php');
+include('functions.php');
 session_destroy();
 ?>
 
@@ -25,28 +25,6 @@ session_destroy();
 			</form>
 		</div>	
 		<!-- validação d.e campos-->
-		<?php
-			//session_start();
-			/*if(isset($_POST['registo'])){
-				$username = $_POST['username'];
-				$password = $_POST['password'];
-				
-				//pedido bd
-				$query = "SELECT * FROM CLIENTE WHERE username = '".$username."' AND password = '".$password."'";
-				$info = mysql_query($query);
-				$numero_de_linhas = mysql_num_rows($info);
-				
-				/*if("numero_de_linhas == 1"){
-					$Fetch = mysql_fetch_array($info);
-					$user=$Fetch['username'];
-					$_SESSION['User']=$user;
-					echo '<span style="color:#019AFF; text-align:center;">LogIn efectuado!</span>';
-					echo '<meta http-equiv="refresh" contente="1;URL=index.php?username='.$user.'">';
-					echo $name;
-					echo "Nao efectuado!".mysql_error();
-				}
-			}*/
-			?>
 	</body>
 </html>
 	
